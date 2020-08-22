@@ -9,8 +9,18 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-items: flex-end;
-    /*background-color: tomato;*/
+    justify-items: center;
+}
+
+#tool-container {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#spacer {
+    width: 86vw;
 }
 
 #profile-picture {
@@ -20,6 +30,7 @@ body {
 }
 
 #search-area {
+    font-size: 14px;
     width: 800px;
     margin: 0 auto;
     display: flex;
@@ -35,14 +46,21 @@ body {
 }
 
 #search-bar {
+    font-size: 14px;
     margin-bottom: 20px;
-    height: 3em;
-    border-radius: 10px;
-    border-style: solid #838383;
-    padding-left: 15px;
+    height: 40px;
+    border-radius: 24px;
+    border-style: solid;
+    border-width: 1px;
+    padding-left: 25px;
+}
+
+#search-bar:hover {
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.3);
 }
 
 #buttons {
+    font-size: 16px;
     width: 800px;
     padding-bottom: 30px;
     display: flex;
@@ -52,11 +70,17 @@ body {
 }
 
 #languages-local {
-    width: 800px;
+    width: 300px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+}
+
+#languages-center {
+    width: 800px;
+    display: flex;
     justify-content: center;
 }
 
@@ -66,15 +90,40 @@ body {
     margin: 10px;
     border: none;
     border-radius: 4px;
-    background-color: hsl(0, 0%, 92%);
-    color: hsl(0, 0%, 45%);
+    background-color: rgb(230, 230, 230);
+    color: hsl(0, 0%, 50%);
+}
+
+.main-buttons:hover {
+    background-color: #f5f5f5;
+    border: 1px solid lightgray;
+}
+
+.information {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 footer {
-    background-color: lightgray;
-    width: 100vw;
-    height: 5vh;
     position: fixed;
+    left: 0;
     bottom: 0;
-    padding: 5px;
+    width: 100%;
+    height: 6vh;
+    border-top: 1px solid #adadad;
+    padding-top: 15px;
+    padding-left: 2em;
+    background-color: rgb(230, 230, 230);
+    text-align: left;
+}
+
+a {
+    text-decoration: none !important;
+    color: #5f5f5f;
+}
+
+a:hover {
+    color: black;
 }
